@@ -1,12 +1,72 @@
-#wrapper {
-    width:80%;
-    margin-right:auto;
-    margin-left:auto;
-}
-nav {
-    border-bottom:2px dotted green;
-    border-radius: 20px;
+* {
+    box-sizing:border-box;
 }
 li {
     color:green;
 }
+a {
+                color:blanchedalmond;
+                text-decoration:none;
+            }
+            h1 {
+                font-size: 50px;
+                font-family: "Bungee", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing:20px;
+                text-decoration:underline;
+                background-color:aquamarine;
+                text-shadow:5px 5px 8px rgba(0, 60, 226, .5);
+                text-transform:uppercase;
+                text-align:center;
+                margin:0;
+            }
+            p {
+                font-size: 2rem;
+                font-weight:bold;
+                font-style:italic;
+                font-family:Arial;
+                line-height:40px;
+                text-indent:50px;
+            } 
+            main {
+                font-size: 2rem;
+            }
+            #Darren {
+                font-size: 3rem;
+                color:chartreuse;
+            }
+            #Darren1 {
+                color:slateblue;
+            }
+            nav ul li {
+                display:inline-block;
+                height:20px;
+                padding:10px 10px;
+                background-color:grey;
+                border:2px dotted green;
+                margin:50px 30px 50px 30px;
+            }
+            nav ul li a:hover {
+                background-color:yellow;
+                color:navy;
+            }
+            body {
+                margin:0;
+            }
+            .dk {
+                width:200px;
+                float:left;
+                padding:5px;
+            }
+            .duck {
+                width:200px;
+                float:right;
+                padding:5px;
+            }
+            #foshizzle {
+                font-size:1rem;
+                position:sticky;
+                top:0;
+                z-index:1;
+            }
