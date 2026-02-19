@@ -1,3 +1,6 @@
+* {
+    box-sizing:border-box;
+}
 #wrapper {
     width:80%;
     margin-right:auto;
@@ -13,6 +16,7 @@ body {
     font-family:Verdana;
     background-image:linear-gradient(to bottom, #eeeeee, #ffffff);
     background-attachment:fixed;
+    margin:0px;
 }
 header {
     background-color:#003058;
