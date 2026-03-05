@@ -15,9 +15,15 @@ nav {
     height:70px;
     grid-row:2 / 3;
     grid-column:1 / -1;
+    font-family:cursive;
+    position:sticky;
+    font-weight:bold;
 }
 #hero {
-    background-color:yellow;
+    background-image:url(images/vecteezy_blue-hydrangeas-and-delicate-white-flowers-frame-a-light_46865727.jpeg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
     height:550px;
     grid-row:3 / 4;
     grid-column:1 / -1;
@@ -40,4 +46,24 @@ nav ul {
     display:flex;
     flex-flow: row nowrap;
     list-style-type:none;
+    position:sticky;
+}
+nav ul li {
+    padding-left:90px;
+    padding-right:90px;
+    padding-bottom:20px;
+    padding-top:20px;
+    display:block;
+    background-color:#ffe3f5;
+    position:sticky;
+}
+nav ul li:hover {
+    background-color:#d08def;
+}
+nav a {
+    text-decoration:none;
+    color:#9830d9;
+}
+nav a:hover {
+    color:rgb(255, 255, 255);
 }
