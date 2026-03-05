@@ -17,6 +17,8 @@ nav {
     grid-column:1 / -1;
     font-family:cursive;
     position:sticky;
+    top:0;
+    margin:0;
     font-weight:bold;
 }
 #hero {
@@ -55,7 +57,7 @@ nav ul li {
     padding-top:20px;
     display:block;
     background-color:#ffe3f5;
-    position:sticky;
+    width:100%;
 }
 nav ul li:hover {
     background-color:#d08def;
@@ -63,6 +65,10 @@ nav ul li:hover {
 nav a {
     text-decoration:none;
     color:#9830d9;
+    text-align:center;
+    padding:1rem 0rem;
+    display:block;
+    text-wrap:nowrap;
 }
 nav a:hover {
     color:rgb(255, 255, 255);
