@@ -10,10 +10,10 @@ header {
     height:130px;
     grid-row:1 / 2;
     grid-column:1 / -1;
-    background-image:url(images/instagram-social-media-logo-icons-instagram-icon-free-png.webp);
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
 }
 nav {
     height:70px;
@@ -138,4 +138,34 @@ nav a:hover {
 }
 body {
     background-color:#efe3eb;
+}
+#facebook {
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+    max-height: 100px;
+}
+#instagram {
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+    max-height: 130px;
+}
+#facebook {
+    object-fit: contain;
+    height: 80px;
+    width: 80px;
+}
+#instagram {
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+}
+#logo {
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    flex-grow: 1;
+    text-align: center;
 }
