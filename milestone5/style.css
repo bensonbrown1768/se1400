@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    display: grid;
+    grid-auto-rows: minmax(0, auto);
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 225px)) minmax(0px, 1fr);
+}
+
+header {
+    height: 130px;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#facebook {
+    object-fit: contain;
+    height: 80px;
+    width: 80px;
+    margin: 0;
+}
+
+#instagram {
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}
+
+#logo {
+    object-fit: contain;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#phone {
+    object-fit: contain;
+    height: 180px;
+    width: 540px;
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav {
+    height: 70px;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    font-family: cursive;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url(images/vecteezy_blue-hydrangeas-and-delicate-white-flowers-frame-a-light_46865727.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+}
+
+#hero h2 {
+    text-align: center;
+    padding-top: 11rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.1rem;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 11rem;
+}
+
+p {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+main {
+    background-color: #ffebf8;
+    height: 530px;
+    grid-row: 4 / 5;
+    grid-column: 2 / -2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    background-color: pink;
+    height: 200px;
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    position: sticky;
+}
+
+nav ul li {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: block;
+    background-color: #ffe3f5;
+    width: 100%;
+}
+
+nav ul li:hover {
+    background-color: #d08def;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9830d9;
+    text-align: center;
+    padding: 1rem 0rem;
+    display: block;
+    text-wrap: nowrap;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.box {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(51, 51, 219);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sched {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-wrap: nowrap;
+}
+
+.sched:hover {
+    color: #000000;
+}
+
+.box:hover {
+    background-color: rgb(183, 111, 232);
+}
+
+.h2b {
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.boxp {
+    float: none;
+    word-wrap: break-word;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: auto;
+    margin-top: auto;
+    text-align: center;
+}
+
+#section {
+    border: 5px solid black;
+    width: 300px;
+    height: 500px;
+    margin-right: 30px;
+    margin-top: 10px;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #efe3eb;
+}
+
+@media only screen and (max-width: 992px) {
+    nav {
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        position: static;
+        height: auto;
+        background-color: #ffe3f5;
+    }
+
+    nav ul {
+        flex-flow: row wrap;
+        justify-content: center;
+        gap:30px;
+        padding: 8px 0;
+    }
+
+    nav ul li {
+        padding: 10px 15px;
+        background-color: #fcd3f1;
+        border: 1px solid #d8a6dd;
+        border-radius: 8px;
+        width: auto;
+    }
+
+    nav a {
+        color: #5f1679;
+        font-size: 1rem;
+        padding: 0;
+    }
+    #phone {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        height:auto;
+        flex-direction:column;
+        align-items:center;
+        padding:20px 0px;
+    }
+
+    #section {
+        width:250px;
+        height:250px;
+        margin:15px auto;
+    }
+
+    #filleri {
+        width:50%;
+        height:50%;
+    }
+
+    footer {
+        height:auto;
+        padding:16px 10px;
+    }
+
+    footer p {
+        padding-left:8px;
+        padding-right:8px;
+        font-size:14px;
+        margin:8px 0px;
+    }
+
+    #facebook, #instagram {
+        display: none;
+    }
+}
