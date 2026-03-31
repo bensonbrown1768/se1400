@@ -4,6 +4,20 @@
 li {
     color:green;
 }
+table, tr, td, th {
+    border:#000 1px solid;
+    padding: 5px;
+    border-collapse: collapse;
+}
+table {
+    width:100%;
+}
+th {
+    background-color:gray;
+}
+tr:nth-of-type(2n+1) {
+    background-color:lightgray;
+}
 a {
                 color:blanchedalmond;
                 text-decoration:none;
