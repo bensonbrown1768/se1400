@@ -290,4 +290,7 @@ body {
     #facebook, #instagram {
         display: none;
     }
+    nav ul {
+        gap:14px;
+    }
 }
