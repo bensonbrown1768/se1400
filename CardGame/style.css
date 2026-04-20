@@ -4,6 +4,20 @@
 li {
     color:green;
 }
+table, tr, td, th {
+    border:#000 1px solid;
+    padding: 5px;
+    border-collapse: collapse;
+}
+table {
+    width:100%;
+}
+th {
+    background-color:gray;
+}
+tr:nth-of-type(2n+1) {
+    background-color:lightgray;
+}
 a {
                 color:blanchedalmond;
                 text-decoration:none;
@@ -41,11 +55,21 @@ a {
             }
             nav ul li {
                 display:inline-block;
-                height:20px;
-                padding:10px 10px;
+                height:40px;
+                padding:10px 10px 40px 10px;
                 background-color:grey;
                 border:2px dotted green;
                 margin:50px 30px 50px 30px;
+                display:flex;
+                position:relative
+            }
+            nav ul li ul {
+                flex-direction:column;
+                position:absolute;
+                display:none;
+            }
+            nav ul li:hover ul {
+                display:flex;
             }
             nav ul li a:hover {
                 background-color:yellow;
@@ -74,3 +98,13 @@ a {
                 width:200px;
                 padding:5px;
             }
+            .bananau {
+                width:200px;
+                padding:5px;
+                transform: scaleY(-1);
+            }
+            .bananau:hover {
+                transition: all 500ms cubic-bezier(0.690, -0.600, 0.205, 1.590);
+                width:300px;
+            }
+
