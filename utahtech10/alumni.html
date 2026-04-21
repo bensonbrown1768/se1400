@@ -6,6 +6,15 @@
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow">
   <link href="style.css" rel="stylesheet" type="text/css">
+  <script> 
+function validateForm() {
+     if (document.forms[0].myEmail.value == "" ) {
+          alert("Please enter an e-mail address.");
+          return false;
+     } // end if
+     return true;
+} // end function validateForm
+</script>
 </head>
 <body>
   <div id="wrapper">
@@ -30,15 +39,15 @@
     <h2>Join Alumni Mailing List</h2>
     <h3>Request Alumni Newsletter</h3>
     <p>Required information is marked with an asterisk (*).</p>
-    <form method="post" action="https://wfc.flitchbeta.com/se1400/index.php">
-      <label for="myFName">* First Name:</label>
-      <input type="text" name="myFName" id="myFName" required>
+    <form method="post" onsubmit="return validateForm();" action="https://wfc.flitchbeta.com/se1400/index.php">
+      <label for="myFName">First Name:</label>
+      <input type="text" name="myFName" id="myFName">
 
-      <label for="myLName">* Last Name:</label>
-      <input type="text" name="myLName" id="myLName" required>
+      <label for="myLName">Last Name:</label>
+      <input type="text" name="myLName" id="myLName">
 
       <label for="myEmail">* Email:</label>
-      <input type="email" name="myEmail" id="myEmail" required>
+      <input type="text" name="myEmail" id="myEmail">
 
       <label for="myPhone">Phone:</label>
       <input type="tel" name="myPhone" id="myPhone">
@@ -46,8 +55,8 @@
       <label for="myGraduation">Graduation Date:</label>
       <input type="date" name="myGraduation" id="myGraduation">
 
-      <label for="myComments">* Comments:</label>
-      <textarea name="myComments" cols="20" rows="2" id="myComments" required></textarea>
+      <label for="myComments">Comments:</label>
+      <textarea name="myComments" cols="20" rows="2" id="myComments"></textarea>
 
       <input type="submit" value="Submit" id="mySubmit">
       
