@@ -36,6 +36,7 @@ header h1 {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right:auto;
 }
 
 #facebook {
@@ -141,6 +142,7 @@ main {
     background-color: #e6f8ff;
     border: 1px solid #d8a6dd;
     border-radius: 16px;
+    margin-top:28px;
 }
 
 .contact-main h2 {
@@ -253,24 +255,6 @@ main img {
     height: auto;
     padding-top: 20px;
 }
-
-@media only screen and (max-width: 900px) {
-    .about-main {
-        justify-content: center;
-    }
-
-    .about-main p {
-        flex: 1 1 100%;
-        max-width: 100%;
-        text-align: left;
-    }
-
-    #business-card {
-        width: 220px;
-        padding-top: 10px;
-    }
-}
-
 footer {
     background-color: pink;
     height: 200px;
@@ -295,6 +279,7 @@ nav ul li {
     display: block;
     background-color: #ffe3f5;
     width: 100%;
+    transition: background-color 0.5s ease-out;
 }
 
 nav ul li:hover {
@@ -308,10 +293,11 @@ nav a {
     padding: 1rem 0rem;
     display: block;
     text-wrap: nowrap;
+    transition: color 0.5s ease-in;
 }
 
 nav a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 238, 252);
 }
 
 .box {
@@ -371,8 +357,27 @@ nav a:hover {
 }
 
 body {
-    background-color: #efe3eb;
+    background-color: #f1feff;
 }
+
+@media only screen and (max-width: 900px) {
+    .about-main {
+        justify-content: center;
+    }
+
+    .about-main p {
+        flex: 1 1 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    #business-card {
+        width: 220px;
+        padding-top: 10px;
+    }
+}
+
+
 
 @media only screen and (max-width: 1100px) {
     nav {
@@ -406,6 +411,9 @@ body {
 
     #phone {
         display: none;
+    }
+    .contact-main {
+        margin-top:0px;
     }
 }
 
